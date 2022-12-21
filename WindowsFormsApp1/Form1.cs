@@ -41,7 +41,7 @@ namespace WindowsFormsApp1
                 try
                 {
                     connection.Open();
-                    // ручное внесение данных в компонент
+                    // чтение в цикле
                     using (MySqlDataReader dr = com.ExecuteReader())
                     {
                         dataGridView1.Columns.Clear();
